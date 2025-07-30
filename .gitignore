@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+.env.*          # All env files, except example
+!.env.example   # Keep sample env file for sharing
+
+# Build Output (Node or Frontend build)
+dist/
+build/
+out/

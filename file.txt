@@ -1,0 +1,19 @@
+src/
+├── config/
+│   ├── constants.ts       # Environment vars, roles, token settings
+│   └── supabase.ts        # Supabase client setup
+├── controllers/
+│   └── authController.ts  # Auth logic (signup, login, etc.)
+├── middlewares/
+│   ├── validator.ts       # Zod schemas
+│   ├── rateLimiter.ts     # Rate limiting
+│   └── identifyUser.ts    # JWT verification
+├── models/
+│   └── User.ts            # User type + Supabase table schema
+├── routers/
+│   └── authRouter.ts      # Auth routes
+├── utils/
+│   ├── hashing.ts         # bcrypt + HMAC utils
+│   ├── sendMail.ts        # Email service (Resend)
+│   └── errorHandler.ts    # Structured error logging
+└── index.ts               # App entry point
